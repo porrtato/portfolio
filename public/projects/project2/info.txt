@@ -1,0 +1,9 @@
+id: 2
+title: Space Adventures
+cardText1: This is a preview of Space Adventures' primary text.
+cardText2: A glimpse of Space Adventures' secondary text.
+primaryText: Explore the galaxy in this fun space simulation game!
+secondaryText: I contributed to the physics engine and storyline.
+link: 
+buttontext: 
+date: 2025-04-18
