@@ -8,6 +8,10 @@ body {
   height: 100vh; /* Ensures full page height */
 }
 
+a{
+  color: aqua;
+}
+
 .app-container {
   display: flex; /* Flexbox layout */
   flex-direction: row; /* Side-by-side alignment */

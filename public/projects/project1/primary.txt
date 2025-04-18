@@ -1,1 +1,1 @@
-I worked on the programming and sprite art for this one. Check out the game at https://osu.ppy.sh/ for more details.
+I worked on the programming and sprite art for this one. Check out the game (here)[https://osu.ppy.sh/] for more details.
