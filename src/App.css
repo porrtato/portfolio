@@ -1,11 +1,8 @@
 
 body {
-  background-image: url('./images/Ai_Kotoba.webp'); /* Path to your image */
-  background-repeat: no-repeat; /* Ensures the image doesn’t repeat */
-  background-size: cover; /* Scales the image to cover the entire page */
-  background-position: center; /* Centers the image */
   margin: 0; /* Removes default margin */
   height: 100vh; /* Ensures full page height */
+  background-color: black;
 }
 
 a{
@@ -13,12 +10,15 @@ a{
 }
 
 .app-container {
+  height: 100vh;
+  width: 100%;
   display: flex; /* Flexbox layout */
   flex-direction: row; /* Side-by-side alignment */
   width: 100vw; /* Full viewport width */
   height: 100vh; /* Full viewport height */
-  background-color: rgba(0, 0, 0, 0.625);
   align-items: center;
+  background-color: rgba(26, 26, 26, 0.65);
+  background-blend-mode: darken;
 }
 
 .left-section {
@@ -32,10 +32,11 @@ a{
 .right-section {
   width: 50vw;
   height: 80%;
-  overflow-y: scroll;
+  overflow-y: auto;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
-  background-color: #00000000;
+  background-color: transparent;
 }
+

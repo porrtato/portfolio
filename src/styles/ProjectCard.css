@@ -24,10 +24,17 @@
 }
 
 .project-image{
-  height: 200px;
-  width: 200px;
+  height: 215px;
+  width: 280px;
   margin-right: 20px;
   object-fit: cover;
+}
+
+.buttonContainer{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .project-button{
