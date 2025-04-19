@@ -19,10 +19,15 @@ export async function loadProjects() {
 
       const imagePath = `/projects/Project${id}/images/image1.webp`;
 
+      // Ensure the link starts with "http://" or "https://" for absolute URLs
+      const normalizedLink = info.link.startsWith("http")
+        ? info.link
+        : `https://${info.link}`;
+
       return {
         id: info.id,
         title: info.title,
-        buttonLink: info.link, // Use link from info.txt
+        buttonLink: normalizedLink, // Normalize link value
         buttonState: info.buttonstate === "y", // Convert 'y'/'n' to a boolean
         buttonText: info.buttontext, // Get button text
         date: info.date,

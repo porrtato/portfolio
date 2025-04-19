@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 .project {
-  padding: 20px;
+  padding: 25px;
   width: 100%;
-  background-color: #27242492;
+  background-color: #0000009f;
   border-radius: 8px;
   color: #333;
   margin: 50px;
   color: aliceblue;
   display: flex;
-  align-items: center;
   font-family: 'Quicksand', sans-serif;
 }
 
 .project-title {
   font-size: 1.5em;
   font-weight: 400;
+  margin-top: 0px;
 }
 
 .project-content {
@@ -49,4 +49,8 @@
 
 .project-button:hover{
   background-color:#3ab95c;
+}
+
+.secondary-text{
+  margin-bottom: 0px;
 }

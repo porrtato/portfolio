@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 .card {
-  width: 600px;
+  width: 800px;
   height: 100px;
   background-color: #00000099;
   border-radius: 8px;
@@ -13,6 +13,7 @@
   /* Ensure links look clean */
   color: #333;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-left: 500px;
 }
 
 .card:hover {
@@ -20,7 +21,7 @@
 }
 
 .card img {
-  width: 100px;
+  width: 130px;
   height: 100px;
   margin-right: 10px;
   /* Space between image and title */

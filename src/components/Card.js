@@ -26,18 +26,22 @@ function Card({ title, image, link, text1, text2, index, isCenter }) {
     };
   }, [index]);
 
-  // Dynamically adjust scale and position
-  const scale = isCenter ? 1.2 : 1; // Center card is slightly larger
-  const translateX = isCenter ? "0" : `${(index - 2) * 30}px`; // Adjust horizontal offset
-  const translateY = isCenter ? "-10px" : `${Math.abs(index - 2) * 20}px`; // Adjust vertical curve
+  // When clicked, apply additional translateX(-30px)
+  const transformStyle =
+    isClicked
+      ? `translateX(-70px)`
+      : ``;
 
   return (
     <a
       href={link}
+      target="_blank"
+      rel="noopener noreferrer"
       className="card"
       onClick={handleClick}
       style={{
         backgroundColor: isClicked ? 'rgba(59, 86, 136, 0.6)' : 'rgba(79, 38, 118, 0.6)',
+        transform: transformStyle,
       }}
     >
       <img src={image} alt={title} />

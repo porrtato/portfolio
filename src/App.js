@@ -139,6 +139,10 @@ function App() {
         transition: "background-image 0.5s ease-in-out",
       }}
     >
+      <div>
+      <img className="overlayTop" src={require('./images/topOverlay.png')} alt="overlay"/>  
+      <img className="overlayBottom" src={require('./images/bottomOverlay.png')} alt="overlay"/>
+      </div>
       <div className="left-section">
         {selectedProject ? (
           <ProjectCard
