@@ -9,7 +9,7 @@ function App() {
   const [selectedProject, setSelectedProject] = useState(null);
   const [backgroundImage, setBackgroundImage] = useState("");
   const [activeCardIndex, setActiveCardIndex] = useState(null);
-  
+
   const containerRef = useRef(null); // Ref for the scroll container
   const cardRefs = useRef([]); // Array of refs for each card
   const lastScrollTop = useRef(0); // Track the last scroll position
@@ -100,22 +100,25 @@ function App() {
       containerRef.current &&
       cardRefs.current.length > 0
     ) {
-      const selectedIndex = projects.findIndex((p) => p.id === selectedProject.id);
+      const selectedIndex = projects.findIndex(
+        (p) => p.id === selectedProject.id
+      );
       if (selectedIndex !== -1 && cardRefs.current[selectedIndex]) {
         const containerHeight = containerRef.current.clientHeight;
         const cardElem = cardRefs.current[selectedIndex];
         const cardOffsetTop = cardElem.offsetTop;
         const cardHeight = cardElem.clientHeight;
-        
+
         let newScrollTop = cardOffsetTop - containerHeight / 2 + cardHeight / 2;
-        const maxScrollTop = containerRef.current.scrollHeight - containerHeight;
+        const maxScrollTop =
+          containerRef.current.scrollHeight - containerHeight;
         newScrollTop = Math.min(newScrollTop, maxScrollTop);
-        
+
         containerRef.current.scrollTo({
           top: newScrollTop,
           behavior: "smooth",
         });
-        
+
         refreshScrollRun.current = true; // Run this effect only once on refresh
       }
     }
@@ -139,9 +142,17 @@ function App() {
         transition: "background-image 0.5s ease-in-out",
       }}
     >
-      <div>
-      <img className="overlayTop" src={require('./images/topOverlay.png')} alt="overlay"/>  
-      <img className="overlayBottom" src={require('./images/bottomOverlay.png')} alt="overlay"/>
+      <div className="overlay">
+        <img
+          className="overlayTop"
+          src={require("./images/topOverlay.png")}
+          alt="overlay"
+        />
+        <img
+          className="overlayBottom"
+          src={require("./images/bottomOverlay.png")}
+          alt="overlay"
+        />
       </div>
       <div className="left-section">
         {selectedProject ? (
@@ -172,6 +183,8 @@ function App() {
                 cursor: "pointer",
                 transform: transformValue,
                 transition: "transform 0.3s ease",
+                marginTop: index === 0 ? "250px" : "0px", // Add top margin for the first card
+                marginBottom: index === projects.length - 1 ? "250px" : "0px", // Add bottom margin for the last card
               }}
             >
               <Card

@@ -41,29 +41,43 @@ a{
   background-color: transparent;
 }
 
-.overlay{
+/* Overlay container styling */
+.overlay {
+  pointer-events: none; /* Prevent interaction with the overlay */
+  position: fixed; /* Remove from layout flow and fix it to the viewport */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5; /* Ensure it's layered above the content */
   display: flex;
   flex-direction: column;
-  pointer-events: none;
+  justify-content: space-between; /* Ensure proper spacing for top and bottom overlays */
 }
 
-.overlayTop{
-  height: 50vh;
-  width: 100vw;
-  position:fixed;
-  top: -180px;
-  z-index: 5;
-  object-fit: contain;
-  pointer-events: none;
-
+/* Styling for top overlay container */
+.overlayTopContainer {
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
 }
 
-.overlayBottom{
-  height: 50vh;
-  width: 100vw;
-  z-index: 5;
-  position:fixed;
+.overlayTop {
+  height: auto;
+  max-height: 50vh;
+  width: 100%;
   object-fit: contain;
-  pointer-events: none;
-  bottom: -50px;
+  top: -90px;
+}
+
+/* Styling for bottom overlay container */
+.overlayBottomContainer {
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+}
+
+.overlayBottom {
+  height: auto;
+  max-height: 50vh;
+  width: 100%;
+  object-fit: contain;
 }
