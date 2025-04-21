@@ -163,6 +163,7 @@ function App() {
             secondaryText={selectedProject.secondaryText}
             buttonLink={selectedProject.buttonLink}
             buttonText={selectedProject.buttonText}
+            tags={selectedProject.tags}
           />
         ) : (
           <p>Please click on a card to view project details.</p>

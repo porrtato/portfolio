@@ -5,3 +5,4 @@ cardText2: Made with React
 link: osu.ppy.sh
 buttontext: Visit Project
 date: 2025-04-18
+tags: github

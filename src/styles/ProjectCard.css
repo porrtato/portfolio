@@ -26,6 +26,33 @@
   font-family: 'Quicksand', sans-serif;
 }
 
+.tag {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.tag-icon {
+  width: 30px;
+  height: 30px;
+  fill: aliceblue;
+}
+
+.tag-icon:hover {
+  width: 30px;
+  height: 30px;
+  fill: rgb(50, 125, 190);
+  cursor: pointer;
+}
+
+.tag-placeholder {
+  font-size: 12px;
+  color: aliceblue;
+}
+
 .project-title {
   font-size: 1.5em;
   font-weight: 400;

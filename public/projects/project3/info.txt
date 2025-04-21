@@ -6,3 +6,4 @@ primaryText: I worked on the programming and sprite art for this one.
 secondaryText: My friend Vince did the design, awesome writing, and environment art!
 link: https://example.com/osu
 date: 2025-04-18
+tags: github

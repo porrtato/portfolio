@@ -36,6 +36,7 @@ export async function loadProjects() {
         secondaryText: secondaryText.trim(),
         cardText1: info.cardText1,
         cardText2: info.cardText2,
+        tags: info.tags ? info.tags.split(",") : [],
       };
     })
   );
