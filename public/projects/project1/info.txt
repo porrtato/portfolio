@@ -5,4 +5,4 @@ cardText2: A glimpse of Osu's secondary text.
 link: osu.ppy.sh/
 buttontext: Visit Project
 date: 2025-04-18
-tags: github
+tags: github,illustrator,react,figma
