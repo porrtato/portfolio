@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 .card {
-  width: 800px;
-  height: 100px;
+  width: 1000px;
+  height: 110px;
   background-color: #00000099;
   border-radius: 8px;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
-  padding: 10px;
+
   text-decoration: none;
   /* Ensure links look clean */
   color: #333;
@@ -21,10 +21,10 @@
 }
 
 .card img {
-  width: 130px;
-  height: 100px;
+  width: 143px;
+  height: 110px;
   margin-right: 10px;
-  /* Space between image and title */
+  border-radius: 8px 0px 0px 8px;
   object-fit: cover;
 }
 

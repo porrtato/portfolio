@@ -37,26 +37,32 @@ function ProjectCard({
   };
 
   return (
-    <div className="project">
-      <div>
-        <img src={image} alt={title} className="project-image" />
+    <div className="project-container">
+      <div className="project">
+        <div>
+          <img src={image} alt={title} className="project-image" />
+        </div>
+        <div className="project-content">
+          <h2 className="project-title">{title}</h2>
+          <p className="primary-text">{renderTextWithLinks(primaryText)}</p>
+          <p className="secondary-text">{renderTextWithLinks(secondaryText)}</p>
+          {buttonText && buttonLink && (
+            <div className="buttonContainer">
+              <a
+                href={buttonLink}
+                className="project-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {buttonText}
+              </a>
+            </div>
+          )}
+        </div>
       </div>
-      <div className="project-content">
-        <h2 className="project-title">{title}</h2>
-        <p className="primary-text">{renderTextWithLinks(primaryText)}</p>
-        <p className="secondary-text">{renderTextWithLinks(secondaryText)}</p>
-        {buttonText && buttonLink && (
-          <div className="buttonContainer">
-            <a
-              href={buttonLink}
-              className="project-button"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {buttonText}
-            </a>
-          </div>
-        )}
+      <div className="project-tags">
+        <div className="link-tags">🖥️</div>
+        <div className="hover-tags"></div>
       </div>
     </div>
   );
