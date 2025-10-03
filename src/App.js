@@ -164,6 +164,7 @@ function App() {
             buttonLink={selectedProject.buttonLink}
             buttonText={selectedProject.buttonText}
             tags={selectedProject.tags}
+            tagLinks={selectedProject.tagLinks} // Pass tagLinks prop
           />
         ) : (
           <p>Please click on a card to view project details.</p>

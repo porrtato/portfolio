@@ -1,8 +1,9 @@
 id: 1
-title: hi this is a change
+title: this is the testing card
 cardText1: This is a preview of Osu's primary text.
 cardText2: A glimpse of Osu's secondary text.
-link: osu.ppy.sh/
+link: youtube.com/watch?v=dQw4w9WgXcQ/
 buttontext: Visit Project
 date: 2025-04-18
 tags: github,illustrator,react,figma
+tagLinks: github=github.com/patataardappel/aardappel

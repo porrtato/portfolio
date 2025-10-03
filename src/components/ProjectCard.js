@@ -14,6 +14,7 @@ function ProjectCard({
   buttonText,
   buttonLink,
   tags,
+  tagLinks = {}, // Add tagLinks prop with default empty object
 }) {
   // Define tag-to-SVG mapping
   const tagIcons = {
@@ -83,12 +84,21 @@ function ProjectCard({
       </div>
       {/* Dynamic Tag Section */}
       <div className="project-tags">
-        {tags.map((tag, index) => (
-          <div key={index} className="tag">
-            {tagIcons[tag] || <span className="tag-placeholder">{tag}</span>}{" "}
-            {/* Fallback if tag isn't mapped */}
-          </div>
-        ))}
+        {tags.map((tag, index) => {
+          const icon = tagIcons[tag] || <span className="tag-placeholder">{tag}</span>;
+          const link = tagLinks[tag];
+          return (
+            <div key={index} className="tag">
+              {link ? (
+                <a href={link} target="_blank" rel="noopener noreferrer">
+                  {icon}
+                </a>
+              ) : (
+                icon
+              )}
+            </div>
+          );
+        })}
       </div>
     </div>
   );
