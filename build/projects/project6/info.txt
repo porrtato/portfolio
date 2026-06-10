@@ -1,0 +1,8 @@
+id: 6
+title: This site
+cardText1: Hmm I wonder what inpsired this site
+cardText2: Made with React
+link: osu.ppy.sh
+buttontext: Visit Project
+date: 2025-04-18
+tags: github

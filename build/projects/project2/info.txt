@@ -1,0 +1,10 @@
+id: 2
+title: Cupcake wars
+cardText1: Local Multiplayer vr game
+cardText2: -Unity -Gamedesign -3d modeling
+primaryText: 
+secondaryText:
+link: 
+buttontext:
+date: 2025-04-18
+tags: github

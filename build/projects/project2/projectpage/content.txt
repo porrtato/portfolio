@@ -1,0 +1,17 @@
+
+Dit project werd ons aangeboden door Enversed. Ze wilden hun bezoekers een schietduelervaring bieden, geïnspireerd op dingen die we kennen uit films, The Matrix, westerns en magische duels zoals we die zien in Harry Potter. Het is voor iedereen herkenbaar, maar niet in het echt te ervaren. De kern van de gameplay draait om twee spelers die projectielen op elkaar afschieten. Spelers moeten aanvallende en verdedigende acties in een vloeiende flow combineren. Ze willen dat de game toewerkt naar een climax/deadline waarin slechts één winnaar overblijft.
+
+
+
+[subtitle]Grafische stijl[/subtitle]
+De grafische stijl die we hebben gekozen is helder gekleurd Low Poly 3D. De stijl is helder en speels, wat past bij het thema van onze game. Belangrijke objecten, zoals de topping van een cupcake, zijn feller van kleur in vergelijking met de muren van de bakkerij.
+Het type bakkerij in de game is de stijl die je in authentieke bakkerijen ziet. Deze stijl is een zeer stereotiep beeld van een bakkerij. Deze stijl gebruikt zachte kleuren zoals beige en bruin. Met deze stijl is de omgeving gemakkelijk te herkennen als een bakkerij. De bakkerijstijl botst ook niet met de grafische stijl.
+
+[subtitle]Level design[/subtitle]
+We hebben naar andere VR-games en bakkerijen gekeken. In totaal hebben we 15 levelontwerpen gemaakt om uit te kiezen. Van die 15 hebben we er één gekozen. De reden dat we voor die optie hebben gekozen, is omdat er geen rommel achter de speler zit, waardoor de tegenstander niet in de war raakt terwijl hij probeert te schieten. Daarom heb ik de toonbank en de tafels aan de linker- en rechterkant van de speler geplaatst, zodat ze niet in de weg zitten. Nadat we het ontwerp hadden gekozen, hebben we de kaart gemaakt volgens de door ons gekozen stijl.
+
+[image]
+
+[subtitle]Raken en geraakt worden[/subtitle]
+Om duidelijk te maken dat je de tegenstander hebt geraakt, heb ik visuele en auditieve effecten in de game geïmplementeerd. Hiervoor heb ik naar andere schietspellen gekeken. Veel van deze spellen gebruiken bloedspatten op het scherm en gekreun als je geraakt wordt. Voor ons spel zou dit niet logisch zijn, dus in plaats van bloed gebruikten we cakebeslag en als geluidseffect gebruikten we een "oef"-geluid wanneer je geraakt werd.
+Als je de andere tegenstander raakte, zou de tegenstander snel rood knipperen terwijl je een kort "ding"-geluid hoorde.
