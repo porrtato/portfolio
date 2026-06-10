@@ -1,10 +1,10 @@
 id: 2
-title: Space Adventures
-cardText1: This is a preview of Space Adventures' primary text.
-cardText2: A glimpse of Space Adventures' secondary text.
-primaryText: Explore the galaxy in this fun space simulation game!
-secondaryText: I contributed to the physics engine and storyline.
+title: Cupcake wars
+cardText1: Local Multiplayer vr game
+cardText2: -Unity -Gamedesign -3d modeling
+primaryText: 
+secondaryText:
 link: 
-buttontext: 
+buttontext:
 date: 2025-04-18
 tags: github

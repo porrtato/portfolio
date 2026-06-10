@@ -2,7 +2,7 @@
 body {
   margin: 0; /* Removes default margin */
   height: 100vh; /* Ensures full page height */
-  background-color: black;
+  background-color: rgb(255, 255, 255);
 }
 
 a{

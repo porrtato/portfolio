@@ -3,6 +3,11 @@ import "./App.css";
 import Card from "./components/Card.js";
 import ProjectCard from "./components/ProjectCard.js";
 import { loadProjects } from "./utils/loadProjects";
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Test1 from './pages/test1';
+import Test2 from './pages/test2';
+import Project from './components/project';
+import About from './components/about';
 
 function App() {
   const [projects, setProjects] = useState([]);
@@ -10,10 +15,10 @@ function App() {
   const [backgroundImage, setBackgroundImage] = useState("");
   const [activeCardIndex, setActiveCardIndex] = useState(null);
 
-  const containerRef = useRef(null); // Ref for the scroll container
-  const cardRefs = useRef([]); // Array of refs for each card
-  const lastScrollTop = useRef(0); // Track the last scroll position
-  const refreshScrollRun = useRef(false); // Flag to run refresh scroll only once
+  const containerRef = useRef(null);
+  const cardRefs = useRef([]);
+  const lastScrollTop = useRef(0);
+  const refreshScrollRun = useRef(false);
 
   // Fetch projects on mount
   useEffect(() => {
@@ -133,74 +138,90 @@ function App() {
   };
 
   return (
-    <div
-      className="app-container"
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        transition: "background-image 0.5s ease-in-out",
-      }}
-    >
-      <div className="overlay">
-        <img
-          className="overlayTop"
-          src={require("./images/topOverlay.png")}
-          alt="overlay"
-        />
-        <img
-          className="overlayBottom"
-          src={require("./images/bottomOverlay.png")}
-          alt="overlay"
-        />
-      </div>
-      <div className="left-section">
-        {selectedProject ? (
-          <ProjectCard
-            title={selectedProject.title}
-            image={selectedProject.image}
-            primaryText={selectedProject.primaryText}
-            secondaryText={selectedProject.secondaryText}
-            buttonLink={selectedProject.buttonLink}
-            buttonText={selectedProject.buttonText}
-            tags={selectedProject.tags}
-            tagLinks={selectedProject.tagLinks} // Pass tagLinks prop
-          />
-        ) : (
-          <p>Please click on a card to view project details.</p>
-        )}
-      </div>
-      <div className="right-section" ref={containerRef}>
-        {projects.map((project, index) => {
-          let transformValue = "none";
-          if (activeCardIndex !== null) {
-            transformValue = getTransformValue(index, activeCardIndex);
-          }
-          return (
-            <div
-              key={project.id}
-              ref={(el) => (cardRefs.current[index] = el)}
-              onClick={() => handleCardClick(project.id, index)}
-              style={{
-                cursor: "pointer",
-                transform: transformValue,
-                transition: "transform 0.3s ease",
-                marginTop: index === 0 ? "250px" : "0px", // Add top margin for the first card
-                marginBottom: index === projects.length - 1 ? "250px" : "0px", // Add bottom margin for the last card
-              }}
-            >
-              <Card
-                title={project.title}
-                image={project.image}
-                text1={project.cardText1}
-                text2={project.cardText2}
-                index={index}
+    <Router>
+      <Routes>
+        <Route path="/" element={
+          <div
+            className="app-container"
+            style={{
+              backgroundImage: `url(${backgroundImage})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              transition: "background-image 0.5s ease-in-out",
+            }}
+          >
+            
+            <div className="overlay">
+              <img
+                className="overlayTop"
+                src={require("./images/topOverlay.png")}
+                alt="overlay"
+              />
+              <img
+                className="overlayBottom"
+                src={require("./images/bottomOverlay.png")}
+                alt="overlay"
               />
             </div>
-          );
-        })}
-      </div>
-    </div>
+            <div className="left-section">
+              {selectedProject ? (
+                <ProjectCard
+                  id={selectedProject.id}
+                  title={selectedProject.title}
+                  image={selectedProject.image}
+                  primaryText={selectedProject.primaryText}
+                  secondaryText={selectedProject.secondaryText}
+                  buttonLink={selectedProject.buttonLink}
+                  buttonText={selectedProject.buttonText}
+                  tags={selectedProject.tags}
+                  tagLinks={selectedProject.tagLinks}
+                />
+              ) : (
+                <p>Please click on a card to view project details.</p>
+              )}
+              {/* Add button to go to test1 */}
+              <div style={{ marginTop: '2rem' }}>
+              </div>
+            </div>
+            <div className="right-section" ref={containerRef}>
+              {projects.map((project, index) => {
+                let transformValue = "none";
+                if (activeCardIndex !== null) {
+                  transformValue = getTransformValue(index, activeCardIndex);
+                }
+                return (
+                  <div
+                    key={project.id}
+                    ref={(el) => (cardRefs.current[index] = el)}
+                    onClick={() => handleCardClick(project.id, index)}
+                    style={{
+                      cursor: "pointer",
+                      transform: transformValue,
+                      transition: "transform 0.3s ease",
+                      marginTop: index === 0 ? "250px" : "0px", // Add top margin for the first card
+                      marginBottom: index === projects.length - 1 ? "250px" : "0px", // Add bottom margin for the last card
+                    }}
+                  >
+                    <Card
+                      title={project.title}
+                      image={project.image}
+                      text1={project.cardText1}
+                      text2={project.cardText2}
+                      index={index}
+                    />
+                  </div>
+                );
+              })}
+            </div>
+            
+          </div>
+        } />
+        <Route path="/test1" element={<Test1 />} />
+        <Route path="/test2" element={<Test2 />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/project/:id" element={<Project />} />
+      </Routes>
+    </Router>
   );
 }
 

@@ -1,0 +1,11 @@
+Een van de eerste stappen was het maken van een onepager voor de game,
+waarin we de setting beschreven. In dit geval speel je in de rol van een Koopa leider, 
+en jouw verantwoordelijkheid is om het kasteel 
+waarin de gekidnapte prinses zich bevindt 
+te verdedigen tegen Mario en zijn vrienden.
+
+[image1]
+
+[image2]
+
+[document1]

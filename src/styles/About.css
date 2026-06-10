@@ -1,0 +1,75 @@
+/* Container */
+.about-container {
+	padding: 2rem;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+/* Project block */
+.about-project {
+	padding: 16px;
+	display: flex;
+	gap: 16px;
+	align-items: flex-start;
+}
+
+/* Image */
+.about-image {
+	width: 160px;
+	height: auto;
+	border-radius: 8px;
+	object-fit: cover;
+}
+
+/* Content column */
+.about-content {
+	flex: 1;
+}
+
+/* Text */
+.about-primary-text {
+	margin: 0 0 12px 0;
+	color: #111;
+}
+
+.about-secondary-text {
+	margin: 0 0 16px 0;
+	color: #444;
+}
+
+/* Button */
+.about-button-container {
+	margin-top: 8px;
+}
+
+.about-button {
+	display: inline-block;
+	padding: 8px 14px;
+	background: #222;
+	color: #fff;
+	border-radius: 8px;
+	text-decoration: none;
+}
+
+/* Skills */
+.about-skills {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+	margin-top: 8px;
+}
+
+.about-skill {
+	background: #eee;
+	padding: 6px 12px;
+	border-radius: 12px;
+}
+
+/* Contact */
+.about-contact-heading {
+	margin-top: 20px;
+}
+
+.about-contact {
+	margin-bottom: 0;
+}

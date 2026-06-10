@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.pd-root {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #111;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.pd-back-link {
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.subtitle{
+    color: #000000;
+    font-weight: 900;
+    margin-bottom: 1rem; /* ensure a single line gap after block subtitles */
+}
+
+.pd-back-button {
+  background: transparent;
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.pd-title {
+  margin-top: 0.25rem;
+  margin-bottom: 12px;
+}
+
+.pd-main-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  object-fit: cover;
+}
+
+/* Image blocks and inline images */
+.pd-image-block {
+  text-align: center;
+  margin: 16px 0;
+}
+
+.pd-block-image {
+  max-width: 100%;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.pd-inline-image {
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 8px;
+  border-radius: 6px;
+  max-height: 360px;
+}
+
+/* Paragraph spacing */
+.pd-paragraph {
+  margin: 0 0 16px 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Tags */
+.pd-tags-heading,
+.pd-links-heading {
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.pd-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pd-tag {
+  background: #eee;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+}
+
+/* Links list */
+.pd-links-list {
+  margin: 0 0 1rem 1.25rem;
+}
+
+/* Loading / error / empty states */
+.pd-loading,
+.pd-empty,
+.pd-error {
+  padding: 24px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.pd-error {
+  color: #fff;
+  background: #b02a37;
+}
+
+.pd-loading,
+.pd-empty {
+  background: #fafafa;
+  color: #666;
+}

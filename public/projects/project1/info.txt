@@ -1,9 +1,9 @@
 id: 1
-title: this is the testing card
-cardText1: This is a preview of Osu's primary text.
-cardText2: A glimpse of Osu's secondary text.
+title: Koopatroll castleguard
+cardText1: A game made in Unity
+cardText2: -Unity -C# -Gamedesign 😀
 link: youtube.com/watch?v=dQw4w9WgXcQ/
-buttontext: Visit Project
+buttontext: Project pagina
 date: 2025-04-18
-tags: github,illustrator,react,figma
+tags: github,unity
 tagLinks: github=github.com/patataardappel/aardappel

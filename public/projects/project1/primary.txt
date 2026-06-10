@@ -1,1 +1,1 @@
-I worked on the programming and sprite art for this one. Check out the game (here)[https://fontys-gdt.itch.io/koopatrol-castle-guard] for more details.
+Koopatroll castle guard is een Unity game die ik in een duo groep heb gemaakt. Het spel is (hier)[https://fontys-gdt.itch.io/koopatrol-castle-guard] the spelen

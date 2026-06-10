@@ -1,12 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/ProjectCard.css"; // Import your styling
 
 import { ReactComponent as GithubIcon } from "../images/svg/github-mark.svg";
 import { ReactComponent as FigmaIcon } from "../images/svg/figma.svg";
 import { ReactComponent as ReactIcon } from "../images/svg/react.svg";
 import { ReactComponent as IllustratorIcon } from "../images/svg/illustrator.svg";
+import { ReactComponent as UnityIcon } from "../images/svg/unity.svg";
 
 function ProjectCard({
+  id,
   title,
   image,
   primaryText,
@@ -22,6 +25,7 @@ function ProjectCard({
     figma: <FigmaIcon className="tag-icon" />,
     react: <ReactIcon className="tag-icon" />,
     illustrator: <IllustratorIcon className="tag-icon" />,
+    unity: <UnityIcon className="tag-icon" />,
   };
 
   // Function to transform text with clickable links
@@ -68,18 +72,18 @@ function ProjectCard({
           <h2 className="project-title">{title}</h2>
           <p className="primary-text">{renderTextWithLinks(primaryText)}</p>
           <p className="secondary-text">{renderTextWithLinks(secondaryText)}</p>
-          {buttonText && buttonLink && (
+          {buttonText && (
             <div className="buttonContainer">
-              <a
-                href={buttonLink}
-                className="project-button"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {buttonText}
-              </a>
+              <Link to={`/project/${id}`}>
+                <button className="project-button">Ga naar project</button>
+              </Link>
             </div>
           )}
+                      <div className="buttonContainer">
+              <Link to={`/project/${id}`}>
+                <button className="project-button">Ga naar project</button>
+              </Link>
+            </div>
         </div>
       </div>
       {/* Dynamic Tag Section */}
