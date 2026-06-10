@@ -3,7 +3,6 @@ title: Koopatroll castleguard
 cardText1: A game made in Unity
 cardText2: -Unity -C# -Gamedesign 😀
 link: youtube.com/watch?v=dQw4w9WgXcQ/
-buttontext: Project pagina
 date: 2025-04-18
 tags: github,unity
 tagLinks: github=github.com/patataardappel/aardappel

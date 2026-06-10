@@ -1,0 +1,6 @@
+System4 is een softwareontwikkelingsbedrijf dat in 2002 is opgericht en momenteel gevestigd is in Uden. Ik heb een nieuwe website voor System4 gemaakt omdat hun oude website verouderd was. Om de nieuwe website te realiseren, heb ik ook een nieuwe System4 styleguide geschreven.
+
+[image1]
+
+[image2]
+
